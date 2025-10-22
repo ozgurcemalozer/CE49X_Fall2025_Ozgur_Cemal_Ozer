@@ -113,7 +113,7 @@ def diurnal_pattern(df,name):
         .rename(columns={'index': 'hour', 'timestamp': 'hour'})
     )
     hourly_avg['hour'] = hourly_avg['hour'].apply(lambda h: f"{int(h):02d}:00")
-    print(f"\n=== {name} Diurnal (Hourly) Average Wind Speed (UTC) ===")
+    print(f"\n=== {name} Diurnal (Hourly) Average Wind Speed ===")
     print(hourly_avg.to_string(index=False))
     return hourly_avg
 
