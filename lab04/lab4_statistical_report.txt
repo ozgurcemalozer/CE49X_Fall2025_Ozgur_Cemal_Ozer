@@ -1,0 +1,24 @@
+Lab 4 - Statistical Report
+----------------------------------------
+
+1) Descriptive Statistics
+ count  mean  median  mode    std  variance  min   Q1     Q3   IQR  max  range  skewness  kurtosis
+   100 35.06    34.2  31.8 6.1627   37.9788 21.8 31.1 39.125 8.025 47.1   25.3    0.0473   -0.6747
+
+2) Distribution Parameters (Normal fit)
+   mean (μ): 35.0600
+   std  (σ): 6.1318
+   CoV  (σ/μ): 0.1749
+   5th percentile: 24.9741
+   95th percentile: 45.1459
+
+3) Key Findings & Interpretations
+   • Shape: skewness=0.0473 (approximately symmetric), kurtosis=-0.6747 (lighter-than-normal tails)
+   • Spread: std=6.1627, IQR=8.0250, range=25.3000
+   • Data span: min=21.8000, max=47.1000, outliers (IQR rule)=0
+   • Visual check: histogram/KDE and overlayed Normal curve were generated.
+
+4) Engineering Implications
+   • Use the 5th percentile as a conservative characteristic value in design checks.
+   • High variability: tighten process controls and consider larger safety factors.
+   • Investigate outliers for measurement errors or batch effects; group-wise analysis may help.
